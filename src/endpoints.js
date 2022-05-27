@@ -9,6 +9,7 @@ server.get('/semaforo/:cor', (req, resp) => {
     const cor = (req.params.cor);
 
     const x = semaforo(cor);
+    
 
     resp.send ({
         msg : x
